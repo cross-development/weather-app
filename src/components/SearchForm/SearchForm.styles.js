@@ -1,44 +1,46 @@
 import styled from 'styled-components';
 
-export const Form = styled.form`
+export const StyledForm = styled.form`
 	display: flex;
 	align-items: center;
 	width: 100%;
 	max-width: 600px;
-	background-color: #fff;
 	border-radius: 3px;
 	overflow: hidden;
-	grid-area: search;
 	padding: 0 50px;
+	margin: 1.5rem auto 4rem;
 `;
 
-export const Div = styled.div`
+export const StyledDiv = styled.div`
 	display: flex;
 	align-items: center;
 	width: 100%;
-	background-color: #fff;
+	/* background-color: #fff; */
 	border-radius: 50px;
 	overflow: hidden;
-	grid-area: search;
 `;
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
 	display: inline-block;
 	width: 48px;
 	height: 38px;
 	border: 0;
 	background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
-	/* background-image: url('../../assets/search.svg'); */
 	background-size: 40%;
 	background-repeat: no-repeat;
 	background-position: center;
 	opacity: 0.6;
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: opacity 250ms linear;
 	cursor: pointer;
 	outline: none;
+	background-color: rgba(0, 0, 0, 0.3);
+
+	&:hover {
+		opacity: 0.9;
+	}
 `;
 
-export const Span = styled.span`
+export const StyledSpan = styled.span`
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -50,64 +52,63 @@ export const Span = styled.span`
 	border: 0;
 `;
 
-export const Input = styled.input`
+export const StyledInput = styled.input`
 	display: inline-block;
 	width: 100%;
 	height: 38px;
 	font: inherit;
 	font-size: 20px;
+	line-height: 24px;
 	border: none;
 	outline: none;
 	padding-left: 4px;
 	padding-right: 4px;
-	background: #fafafa;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.2);
+
+	&::placeholder {
+		font: inherit;
+		font-size: 16px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	&::-webkit-input-placeholder {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	&::-moz-placeholder {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	&:-moz-placeholder {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	&:-ms-input-placeholder {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	&:focus::-webkit-input-placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	&:focus::-moz-placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	&:focus:-moz-placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	&:focus:-ms-input-placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
 `;
-
-// .searchFormButton:hover {
-// 	opacity: 1;
-// }
-
-// .searchFormInput::placeholder {
-// 	font: inherit;
-// 	font-size: 18px;
-// }
-
-// .searchFormInput::-webkit-input-placeholder {
-// 	opacity: 1;
-// 	transition: opacity 0.3s ease;
-// }
-
-// .searchFormInput::-moz-placeholder {
-// 	opacity: 1;
-// 	transition: opacity 0.3s ease;
-// }
-
-// .searchFormInput:-moz-placeholder {
-// 	opacity: 1;
-// 	transition: opacity 0.3s ease;
-// }
-
-// .searchFormInput:-ms-input-placeholder {
-// 	opacity: 1;
-// 	transition: opacity 0.3s ease;
-// }
-
-// .searchFormInput:focus::-webkit-input-placeholder {
-// 	opacity: 0;
-// 	transition: opacity 0.3s ease;
-// }
-
-// .searchFormInput:focus::-moz-placeholder {
-// 	opacity: 0;
-// 	transition: opacity 0.3s ease;
-// }
-
-// .searchFormInput:focus:-moz-placeholder {
-// 	opacity: 0;
-// 	transition: opacity 0.3s ease;
-// }
-
-// .searchFormInput:focus:-ms-input-placeholder {
-// 	opacity: 0;
-// 	transition: opacity 0.3s ease;
-// }

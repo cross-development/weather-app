@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 //Styles
-import { Form, Div, Button, Span, Input } from './SearchForm.styles';
+import { StyledForm, StyledDiv, StyledButton, StyledSpan, StyledInput } from './SearchForm.styles';
 
 const SearchForm = ({ onSubmit }) => {
 	const [value, setValue] = useState('');
@@ -19,21 +19,21 @@ const SearchForm = ({ onSubmit }) => {
 	};
 
 	return (
-		<Form onSubmit={handleSubmit}>
-			<Div>
-				<Button type="submit">
-					<Span>Search</Span>
-				</Button>
+		<StyledForm onSubmit={handleSubmit}>
+			<StyledDiv>
+				<StyledButton type="submit">
+					<StyledSpan>Search</StyledSpan>
+				</StyledButton>
 
-				<Input
+				<StyledInput
 					type="text"
 					value={value}
 					autoComplete="off"
 					placeholder="Search location, zip..."
 					onChange={handleChange}
 				/>
-			</Div>
-		</Form>
+			</StyledDiv>
+		</StyledForm>
 	);
 };
 

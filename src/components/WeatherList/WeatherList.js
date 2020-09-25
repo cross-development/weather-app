@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 //Components
 import WeatherItem from '../WeatherItem';
 //Styles
-import { UL } from './WeatherList.styles';
+import { StyledUL } from './WeatherList.styles';
 
 const WeatherList = ({ weatherData }) => (
-	<UL>
+	<StyledUL>
 		{weatherData.map(item => (
 			<WeatherItem key={item.id} additionalInfo={item} />
 		))}
-	</UL>
+	</StyledUL>
 );
 
 WeatherList.propTypes = {
