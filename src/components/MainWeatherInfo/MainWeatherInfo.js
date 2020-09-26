@@ -14,8 +14,6 @@ library.add(fas);
 const MainWeatherInfo = ({ name, country, weatherCode, observationTime, temperature }) => {
 	const iconUrl = getIconUrl(weatherCode, observationTime);
 
-	console.log(iconUrl);
-
 	return (
 		<StyledDiv>
 			<FontAwesomeIcon icon={iconUrl} size="8x" />

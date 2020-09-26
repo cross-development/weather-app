@@ -15,7 +15,6 @@ export const StyledDiv = styled.div`
 	display: flex;
 	align-items: center;
 	width: 100%;
-	/* background-color: #fff; */
 	border-radius: 50px;
 	overflow: hidden;
 `;

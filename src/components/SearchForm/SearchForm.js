@@ -12,7 +12,7 @@ const SearchForm = ({ onSubmit }) => {
 	const handleSubmit = e => {
 		e.preventDefault();
 
-		if (!value || value === ' ') alert('Enter location or zip');
+		if (!value || value === ' ') return alert('Enter location or zip');
 
 		onSubmit(value);
 		setValue('');
@@ -26,6 +26,7 @@ const SearchForm = ({ onSubmit }) => {
 				</StyledButton>
 
 				<StyledInput
+					required
 					type="text"
 					value={value}
 					autoComplete="off"

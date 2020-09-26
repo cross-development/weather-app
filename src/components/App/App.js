@@ -3,41 +3,35 @@ import React, { useState, useEffect } from 'react';
 //Components
 import Loader from '../Loader';
 import SearchForm from '../SearchForm';
+import Notification from '../Notification';
 import WeatherDetails from '../WeatherDetails';
+import WeatherForecasts from '../WeatherForecasts';
 //Services
 import weatherAPI from 'services';
 
 const App = () => {
 	const [error, setError] = useState(null);
-	const [weather, setWeather] = useState('');
+	const [weather, setWeather] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [searchQuery, setSearchQuery] = useState('');
 
 	useEffect(() => {
-		if (searchQuery) {
-			setLoading(true);
+		if (!searchQuery) return;
 
-			weatherAPI
-				.fetchCurrentWeatherByQuery()
-				.then(weather => setWeather(weather))
-				.catch(error => setError(error))
-				.finally(() => setLoading(false));
+		setLoading(true);
 
-			return;
-		}
-
-		// const position = ({ coords }) => {
-		// 	console.log(coords);
-		// };
-
-		// navigator.geolocation.getCurrentPosition(position);
+		weatherAPI
+			.fetchCurrentWeatherByQuery()
+			.then(weather => (weather.error ? setError(weather.error) : setWeather(weather)))
+			.catch(error => setError(error))
+			.finally(() => setLoading(false));
 	}, [searchQuery]);
 
 	const handleFormSubmit = query => {
 		weatherAPI.searchQuery = query;
-
 		setSearchQuery(query);
-		setWeather('');
+		setWeather(null);
+		setError(null);
 	};
 
 	return (
@@ -46,7 +40,9 @@ const App = () => {
 
 			{loading && <Loader isLoading={loading} />}
 
-			{weather && <WeatherDetails weatherData={weather} />}
+			{error && <Notification message={error.message || error.info} />}
+
+			{!loading && weather && <WeatherDetails weatherData={weather} />}
 		</>
 	);
 };
