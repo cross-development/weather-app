@@ -1,20 +1,26 @@
 //Core
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+//Data
+import countriesCode from 'data/countriesCode.json';
 //Styles
 import { StyledForm, StyledDiv, StyledButton, StyledSpan, StyledInput } from './SearchForm.styles';
 
 const SearchForm = ({ onSubmit }) => {
 	const [value, setValue] = useState('');
+	const [countryCode, setCountryCode] = useState('');
 
-	const handleChange = ({ target: { value } }) => setValue(value);
+	const handleChangeText = ({ target: { value } }) => setValue(value);
+
+	const handleChangeSelect = ({ target: { value } }) => setCountryCode(value);
 
 	const handleSubmit = e => {
 		e.preventDefault();
 
 		if (!value || value === ' ') return alert('Enter location or zip');
 
-		onSubmit(value);
+		onSubmit(value, countryCode);
+		setCountryCode('');
 		setValue('');
 	};
 
@@ -31,8 +37,19 @@ const SearchForm = ({ onSubmit }) => {
 					value={value}
 					autoComplete="off"
 					placeholder="Search location, zip..."
-					onChange={handleChange}
+					onChange={handleChangeText}
 				/>
+
+				<select value={countryCode} onChange={handleChangeSelect}>
+					<option value="" disabled>
+						None
+					</option>
+					{countriesCode.map(({ code, name }) => (
+						<option key={code} value={code}>
+							{name}
+						</option>
+					))}
+				</select>
 			</StyledDiv>
 		</StyledForm>
 	);

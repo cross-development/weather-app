@@ -11,12 +11,12 @@ import { StyledDiv, StyledNameP, StyledTempP, StyledCountryP } from './MainWeath
 
 library.add(fas);
 
-const MainWeatherInfo = ({ name, country, weatherCode, observationTime, temperature }) => {
-	const iconUrl = getIconUrl(weatherCode, observationTime);
+const MainWeatherInfo = ({ name, country, weatherIcon, observationTime, temperature }) => {
+	const iconUrl = getIconUrl(weatherIcon.icon);
 
 	return (
 		<StyledDiv>
-			<FontAwesomeIcon icon={iconUrl} size="8x" />
+			<img src={iconUrl} alt={weatherIcon.description} />
 			<StyledNameP>{name}</StyledNameP>
 			<StyledCountryP>{country}</StyledCountryP>
 			<StyledTempP>{temperature} &#176;C</StyledTempP>

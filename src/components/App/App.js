@@ -22,13 +22,17 @@ const App = () => {
 
 		weatherAPI
 			.fetchCurrentWeatherByQuery()
-			.then(weather => (weather.error ? setError(weather.error) : setWeather(weather)))
+			.then(({ status, data, statusText }) =>
+				status === 200 ? setWeather(...data.data) : setError(statusText),
+			)
 			.catch(error => setError(error))
 			.finally(() => setLoading(false));
 	}, [searchQuery]);
 
-	const handleFormSubmit = query => {
+	const handleFormSubmit = (query, countryCode) => {
 		weatherAPI.searchQuery = query;
+		weatherAPI.code = countryCode;
+
 		setSearchQuery(query);
 		setWeather(null);
 		setError(null);
@@ -40,7 +44,7 @@ const App = () => {
 
 			{loading && <Loader isLoading={loading} />}
 
-			{error && <Notification message={error.message || error.info} />}
+			{error && <Notification message={error.message || error} />}
 
 			{!loading && weather && <WeatherDetails weatherData={weather} />}
 		</>
