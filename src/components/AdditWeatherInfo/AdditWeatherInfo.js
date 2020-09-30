@@ -10,7 +10,7 @@ import { StyledUL, StyledLI, StyledDiv, StyledTitle, StyledValue } from './Addit
 library.add(fas);
 
 const AdditWeatherInfo = ({ data }) => {
-	const { humidity, precip, wind_dir, wind_speed, uv_index } = data;
+	const { rh, precip, wind_cdir, wind_spd, uv } = data;
 
 	return (
 		<StyledUL>
@@ -20,7 +20,7 @@ const AdditWeatherInfo = ({ data }) => {
 				</StyledDiv>
 				<StyledDiv>
 					<StyledTitle>Humidity</StyledTitle>
-					<StyledValue>{humidity} %</StyledValue>
+					<StyledValue>{rh} %</StyledValue>
 				</StyledDiv>
 			</StyledLI>
 
@@ -42,7 +42,7 @@ const AdditWeatherInfo = ({ data }) => {
 				<StyledDiv>
 					<StyledTitle>Wind Speed</StyledTitle>
 					<StyledValue>
-						{wind_dir} {wind_speed} km/h
+						{wind_cdir} {wind_spd} m/s
 					</StyledValue>
 				</StyledDiv>
 			</StyledLI>
@@ -53,7 +53,7 @@ const AdditWeatherInfo = ({ data }) => {
 				</StyledDiv>
 				<StyledDiv>
 					<StyledTitle>UV Index</StyledTitle>
-					<StyledValue>{uv_index}</StyledValue>
+					<StyledValue>{uv}</StyledValue>
 				</StyledDiv>
 			</StyledLI>
 		</StyledUL>
@@ -62,11 +62,11 @@ const AdditWeatherInfo = ({ data }) => {
 
 AdditWeatherInfo.propTypes = {
 	data: PropTypes.shape({
+		rh: PropTypes.number.isRequired,
+		uv: PropTypes.number.isRequired,
 		precip: PropTypes.number.isRequired,
-		humidity: PropTypes.number.isRequired,
-		wind_dir: PropTypes.string.isRequired,
-		uv_index: PropTypes.number.isRequired,
-		wind_speed: PropTypes.number.isRequired,
+		wind_spd: PropTypes.number.isRequired,
+		wind_cdir: PropTypes.string.isRequired,
 	}).isRequired,
 };
 

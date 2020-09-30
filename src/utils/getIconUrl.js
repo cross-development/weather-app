@@ -1,10 +1,8 @@
 //Weather code info
-import weatherCode from 'data/weatherCode.json';
+// import weatherCode from 'data/weatherCode.json';
 
-export const getIconUrl = icon => {
-	return `../../assets/icons/${icon}`;
+// export const getIconUrl = icon => {
+// 	const weatherItem = weatherCode.find(item => code === item.code);
 
-	// const weatherItem = weatherCode.find(item => code === item.code);
-
-	// return time.includes('PM') ? weatherItem.dayIcon : weatherItem.nightIcon;
-};
+// 	return time.includes('PM') ? weatherItem.dayIcon : weatherItem.nightIcon;
+// };

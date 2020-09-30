@@ -14,7 +14,7 @@ export default {
 			.get(`current?city=${this.query},${this.code}`, { params })
 			.then(response => response)
 			.catch(error => {
-				throw Error(404);
+				throw Error(error);
 			});
 	},
 

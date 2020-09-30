@@ -25,3 +25,13 @@ export const StyledTempP = styled.p`
 	line-height: 3rem;
 	font-weight: 700;
 `;
+
+export const StyledImg = styled.div`
+	background-image: url(${props => `../../assets/icons/${props.icon}.png`});
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+`;

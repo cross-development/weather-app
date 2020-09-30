@@ -12,7 +12,10 @@ export const StyledLI = styled.li`
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin-bottom: 1.5rem;
+
+	&:not(:last-child) {
+		margin-bottom: 1.5rem;
+	}
 `;
 
 export const StyledDiv = styled.div`

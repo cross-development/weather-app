@@ -1,33 +1,40 @@
 //Core
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-//Utils
-import { getIconUrl } from 'utils';
+import countriesCode from 'data/countriesCode.json';
 //Styles
-import { StyledDiv, StyledNameP, StyledTempP, StyledCountryP } from './MainWeatherInfo.styles';
+import {
+	StyledDiv,
+	StyledImg,
+	StyledNameP,
+	StyledTempP,
+	StyledCountryP,
+} from './MainWeatherInfo.styles';
 
-library.add(fas);
-
-const MainWeatherInfo = ({ name, country, weatherIcon, observationTime, temperature }) => {
-	const iconUrl = getIconUrl(weatherIcon.icon);
+const MainWeatherInfo = ({ cityName, countryCode, weatherIcon, feelsTemp, temperature }) => {
+	const { name: country } = countriesCode.find(({ code }) => code === countryCode);
 
 	return (
 		<StyledDiv>
-			<img src={iconUrl} alt={weatherIcon.description} />
-			<StyledNameP>{name}</StyledNameP>
+			<StyledImg icon={weatherIcon.icon} />
+			<StyledNameP>{cityName}</StyledNameP>
 			<StyledCountryP>{country}</StyledCountryP>
 			<StyledTempP>{temperature} &#176;C</StyledTempP>
+			<StyledNameP>Feels like {feelsTemp} &#176;C</StyledNameP>
 		</StyledDiv>
 	);
 };
 
 MainWeatherInfo.propTypes = {
-	name: PropTypes.string.isRequired,
-	country: PropTypes.string.isRequired,
-	weatherCode: PropTypes.number.isRequired,
+	cityName: PropTypes.string.isRequired,
+	feelsTemp: PropTypes.number.isRequired,
+	countryCode: PropTypes.string.isRequired,
+	temperature: PropTypes.number.isRequired,
+	weatherIcon: PropTypes.shape({
+		icon: PropTypes.string.isRequired,
+		code: PropTypes.number.isRequired,
+		description: PropTypes.string.isRequired,
+	}).isRequired,
 };
 
 export default MainWeatherInfo;

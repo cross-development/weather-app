@@ -8,7 +8,7 @@ export const StyledForm = styled.form`
 	border-radius: 3px;
 	overflow: hidden;
 	padding: 0 50px;
-	margin: 1.5rem auto 4rem;
+	margin: 1.5rem auto 3rem;
 `;
 
 export const StyledDiv = styled.div`

@@ -8,17 +8,16 @@ import AdditWeatherInfo from '../AdditWeatherInfo';
 import { StyledSection } from './WeatherDetails.styles';
 
 const WeatherDetails = ({ weatherData }) => {
-	const { city_name, country_code, temp, ob_time, weather, ...additionalInfo } = weatherData;
+	const { city_name, country_code, temp, weather, app_temp, ...additionalInfo } = weatherData;
 
 	return (
 		<StyledSection>
 			<MainWeatherInfo
-				name={city_name}
 				temperature={temp}
-				country={country_code}
-				// observationTime={ob_time}
+				feelsTemp={app_temp}
+				cityName={city_name}
 				weatherIcon={weather}
-				// weatherCode={weather.code}
+				countryCode={country_code}
 			/>
 
 			<AdditWeatherInfo data={additionalInfo} />
