@@ -6,4 +6,6 @@ export const StyledUL = styled.ul`
 	justify-content: space-evenly;
 	align-items: center;
 	list-style: none;
+	width: 100%;
+	margin-top: 1.2rem;
 `;

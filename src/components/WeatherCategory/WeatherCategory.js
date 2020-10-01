@@ -4,17 +4,14 @@ import PropTypes from 'prop-types';
 //Styles
 import { StyledDiv, StyledButton } from './WeatherCategory.styles';
 
-const WeatherCategory = ({ onSetForecastType }) => {
-	return (
-		<StyledDiv>
-			<StyledButton onClick={() => onSetForecastType('daily')}>Daily</StyledButton>
-			<StyledButton onClick={() => onSetForecastType('hourly')}>Hourly</StyledButton>
-		</StyledDiv>
-	);
-};
+const WeatherCategory = ({ onGetForecast }) => (
+	<StyledDiv>
+		<StyledButton onClick={onGetForecast}>Daily forecast</StyledButton>
+	</StyledDiv>
+);
 
 WeatherCategory.propTypes = {
-	onSetForecastType: PropTypes.func.isRequired,
+	onGetForecast: PropTypes.func.isRequired,
 };
 
 export default WeatherCategory;

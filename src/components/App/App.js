@@ -47,6 +47,8 @@ const App = () => {
 			{error && <Notification message={error.message || error} />}
 
 			{!loading && weather && <WeatherDetails weatherData={weather} />}
+
+			{!loading && weather && <WeatherForecasts />}
 		</>
 	);
 };

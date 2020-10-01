@@ -9,7 +9,7 @@ export default {
 
 	code: '',
 
-	async fetchCurrentWeatherByQuery() {
+	fetchCurrentWeatherByQuery() {
 		return axios
 			.get(`current?city=${this.query},${this.code}`, { params })
 			.then(response => response)
@@ -21,11 +21,11 @@ export default {
 	fetchCurrentWeatherByGPS() {},
 
 	fetchForecastWeather() {
-		axios
-			.get(`forecast?units=m&forecast_days=1&hourly=1&query=${this.query}`, { params })
-			.then(({ data }) => data)
+		return axios
+			.get(`forecast/daily?city=${this.query},${this.code}`, { params })
+			.then(response => response)
 			.catch(error => {
-				throw Error(404);
+				throw Error(error);
 			});
 	},
 

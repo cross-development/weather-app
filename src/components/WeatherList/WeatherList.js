@@ -6,18 +6,14 @@ import WeatherItem from '../WeatherItem';
 //Styles
 import { StyledUL } from './WeatherList.styles';
 
-const WeatherList = ({ type, weatherData }) => {
-	return (
-		<StyledUL>
-			{weatherData.map(item => (
-				<WeatherItem key={item} additionalInfo={item} />
-			))}
-		</StyledUL>
-	);
-};
+const WeatherList = ({ weatherData }) => (
+	<StyledUL>
+		{weatherData.map((item, idx) => idx < 7 && <WeatherItem key={item.ts} additionalInfo={item} />)}
+	</StyledUL>
+);
 
 WeatherList.propTypes = {
-	weatherData: PropTypes.arrayOf(PropTypes.object).isRequired,
+	weatherData: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
 };
 
 export default WeatherList;

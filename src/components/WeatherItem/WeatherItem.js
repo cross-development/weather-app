@@ -1,39 +1,33 @@
 //Core
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-//Utils
-import { getIconUrl } from 'utils';
 //Styles
-import { StyledLI, StyledDayP, StyledTempP, StyledDescP } from './WeatherItem.styles';
+import { StyledLI, StyledDayP, StyledTempP, StyledDescP, StyledImg } from './WeatherItem.styles';
 
-library.add(fas);
-//! Пропсы шаблонные, указать точные согласно ответа АПИ
+const WeatherItem = ({ additionalInfo }) => {
+	const { valid_date, weather, temp } = additionalInfo;
 
-const WeatherItem = ({ forecast }) => {
-	const iconUrl = getIconUrl(forecast.weatherCode, forecast.observationTime);
+	const day = valid_date.split('-').reverse().join('-');
 
-	return forecast.map(item => (
+	return (
 		<StyledLI>
-			<StyledDayP>{}</StyledDayP>
-			<FontAwesomeIcon icon={iconUrl} size="xs" />
-			<StyledTempP>{} &#176;C</StyledTempP>
-			<StyledDescP>{}</StyledDescP>
+			<StyledDayP>{day}</StyledDayP>
+			<StyledImg icon={weather.icon}></StyledImg>
+			<StyledTempP>{temp} &#176;C</StyledTempP>
+			<StyledDescP>{weather.description}</StyledDescP>
 		</StyledLI>
-	));
+	);
 };
 
 WeatherItem.propTypes = {
-	forecast: PropTypes.arrayOf(
-		PropTypes.shape({
-			day: PropTypes.string.isRequired,
+	additionalInfo: PropTypes.shape({
+		temp: PropTypes.number.isRequired,
+		valid_date: PropTypes.string.isRequired,
+		weather: PropTypes.shape({
 			icon: PropTypes.string.isRequired,
-			temperature: PropTypes.number.isRequired,
 			description: PropTypes.string.isRequired,
-		}),
-	).isRequired,
+		}).isRequired,
+	}).isRequired,
 };
 
 export default WeatherItem;

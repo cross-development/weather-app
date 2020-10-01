@@ -6,9 +6,9 @@ import countriesCode from 'data/countriesCode.json';
 import {
 	StyledDiv,
 	StyledImg,
-	StyledNameP,
+	StyledTitleP,
 	StyledTempP,
-	StyledCountryP,
+	StyledSubtitleP,
 } from './MainWeatherInfo.styles';
 
 const MainWeatherInfo = ({ cityName, countryCode, weatherIcon, feelsTemp, temperature }) => {
@@ -16,11 +16,11 @@ const MainWeatherInfo = ({ cityName, countryCode, weatherIcon, feelsTemp, temper
 
 	return (
 		<StyledDiv>
-			<StyledImg icon={weatherIcon.icon} />
-			<StyledNameP>{cityName}</StyledNameP>
-			<StyledCountryP>{country}</StyledCountryP>
+			<StyledImg icon={weatherIcon.icon}></StyledImg>
+			<StyledTitleP>{cityName}</StyledTitleP>
+			<StyledSubtitleP>{country}</StyledSubtitleP>
 			<StyledTempP>{temperature} &#176;C</StyledTempP>
-			<StyledNameP>Feels like {feelsTemp} &#176;C</StyledNameP>
+			<StyledSubtitleP>Feels like {feelsTemp} &#176;C</StyledSubtitleP>
 		</StyledDiv>
 	);
 };

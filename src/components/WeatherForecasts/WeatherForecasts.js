@@ -1,39 +1,36 @@
 //Core
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 //Components
 import WeatherList from '../WeatherList';
+import Notification from '../Notification';
 import WeatherCategory from '../WeatherCategory';
 //Services
 import weatherAPI from 'services';
 //Styles
 import { StyledSection } from './WeatherForecasts.styles';
 
-//! Этот блок не подключен. Перепроверить useEffect, т.к. проходит зацикливание
-
 const WeatherForecasts = () => {
 	const [error, setError] = useState(null);
 	const [forecast, setForecast] = useState(null);
-	const [forecastType, setForecastType] = useState('daily');
 
-	useEffect(() => {
+	const getForecastWeather = () => {
 		weatherAPI
 			.fetchForecastWeather()
-			.then(weather => (weather.error ? setError(weather.error) : setForecast(weather)))
+			.then(({ status, data, statusText }) =>
+				status === 200 ? setForecast(data.data) : setError(statusText),
+			)
 			.catch(error => setError(error));
-	}, [forecast]);
-
-	const handleForecastType = type => setForecastType(type);
+	};
 
 	return (
 		<StyledSection>
-			<WeatherCategory onSetForecastType={handleForecastType} />
+			<WeatherCategory onGetForecast={getForecastWeather} />
 
-			{!error && <WeatherList type={forecastType} weatherData={forecast} />}
+			{error && <Notification message={error.message || error} />}
+
+			{!error && forecast && <WeatherList weatherData={forecast} />}
 		</StyledSection>
 	);
 };
-
-WeatherForecasts.propTypes = {};
 
 export default WeatherForecasts;

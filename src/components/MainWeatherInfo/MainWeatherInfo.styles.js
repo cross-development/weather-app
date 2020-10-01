@@ -10,12 +10,12 @@ export const StyledDiv = styled.div`
 	justify-content: center;
 `;
 
-export const StyledNameP = styled.p`
+export const StyledTitleP = styled.p`
 	font-size: 1.8rem;
 	margin-top: 0.5rem;
 `;
 
-export const StyledCountryP = styled.p`
+export const StyledSubtitleP = styled.p`
 	font-size: 1.3rem;
 	margin-bottom: 0.5rem;
 `;
