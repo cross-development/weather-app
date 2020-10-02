@@ -22,12 +22,8 @@ export const StyledDescP = styled.p`
 	font-size: 14px;
 `;
 
-export const StyledImg = styled.div`
-	background-image: url(${props => `../../assets/icons/${props.icon}.png`});
+export const StyledImg = styled.img`
 	display: block;
-	width: 50px;
-	height: 50px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	width: 80px;
+	height: 80px;
 `;

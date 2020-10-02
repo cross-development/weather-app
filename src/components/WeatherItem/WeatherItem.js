@@ -12,7 +12,7 @@ const WeatherItem = ({ additionalInfo }) => {
 	return (
 		<StyledLI>
 			<StyledDayP>{day}</StyledDayP>
-			<StyledImg icon={weather.icon}></StyledImg>
+			<StyledImg src={`${process.env.PUBLIC_URL}/icons/${weather.icon}.png`} alt="img" />
 			<StyledTempP>{temp} &#176;C</StyledTempP>
 			<StyledDescP>{weather.description}</StyledDescP>
 		</StyledLI>

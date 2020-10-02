@@ -26,12 +26,8 @@ export const StyledTempP = styled.p`
 	font-weight: 700;
 `;
 
-export const StyledImg = styled.div`
-	background-image: url(${props => `../../assets/icons/${props.icon}.png`});
+export const StyledImg = styled.img`
 	display: block;
-	width: 100px;
-	height: 100px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
 `;

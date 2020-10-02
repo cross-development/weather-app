@@ -5,6 +5,7 @@ export const StyledDiv = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	margin-left: 2rem;
 `;
 
 export const StyledButton = styled.button`

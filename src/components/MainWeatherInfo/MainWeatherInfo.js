@@ -16,7 +16,7 @@ const MainWeatherInfo = ({ cityName, countryCode, weatherIcon, feelsTemp, temper
 
 	return (
 		<StyledDiv>
-			<StyledImg icon={weatherIcon.icon}></StyledImg>
+			<StyledImg src={`${process.env.PUBLIC_URL}/icons/${weatherIcon.icon}.png`} alt="img" />
 			<StyledTitleP>{cityName}</StyledTitleP>
 			<StyledSubtitleP>{country}</StyledSubtitleP>
 			<StyledTempP>{temperature} &#176;C</StyledTempP>

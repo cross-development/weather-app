@@ -13,3 +13,10 @@ body {
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
+
+#root {
+	height: 100vh;
+	padding-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+}

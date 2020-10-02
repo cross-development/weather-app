@@ -5,7 +5,7 @@ import WeatherList from '../WeatherList';
 import Notification from '../Notification';
 import WeatherCategory from '../WeatherCategory';
 //Services
-import weatherAPI from 'services';
+import { getForecastWeather } from 'services';
 //Styles
 import { StyledSection } from './WeatherForecasts.styles';
 
@@ -13,18 +13,11 @@ const WeatherForecasts = () => {
 	const [error, setError] = useState(null);
 	const [forecast, setForecast] = useState(null);
 
-	const getForecastWeather = () => {
-		weatherAPI
-			.fetchForecastWeather()
-			.then(({ status, data, statusText }) =>
-				status === 200 ? setForecast(data.data) : setError(statusText),
-			)
-			.catch(error => setError(error));
-	};
+	const getWeather = () => getForecastWeather(setForecast, setError);
 
 	return (
 		<StyledSection>
-			<WeatherCategory onGetForecast={getForecastWeather} />
+			<WeatherCategory onGetForecast={getWeather} />
 
 			{error && <Notification message={error.message || error} />}
 

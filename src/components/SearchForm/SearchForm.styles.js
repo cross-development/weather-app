@@ -8,7 +8,7 @@ export const StyledForm = styled.form`
 	border-radius: 3px;
 	overflow: hidden;
 	padding: 0 50px;
-	margin: 1.5rem auto 3rem;
+	margin: 0 auto 3rem;
 `;
 
 export const StyledDiv = styled.div`
@@ -110,4 +110,8 @@ export const StyledInput = styled.input`
 		opacity: 0;
 		transition: opacity 0.3s ease;
 	}
+`;
+
+export const StyledSelectWrapper = styled.div`
+	width: 50%;
 `;

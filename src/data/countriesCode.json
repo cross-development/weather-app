@@ -1,990 +1,990 @@
 [
 	{
-		"code": "AF",
-		"name": "Afghanistan"
+		"value": "AF",
+		"label": "Afghanistan"
 	},
 	{
-		"code": "AX",
-		"name": "Aland Islands"
+		"value": "AX",
+		"label": "Aland Islands"
 	},
 	{
-		"code": "AL",
-		"name": "Albania"
+		"value": "AL",
+		"label": "Albania"
 	},
 	{
-		"code": "DZ",
-		"name": "Algeria"
+		"value": "DZ",
+		"label": "Algeria"
 	},
 	{
-		"code": "AS",
-		"name": "American Samoa"
+		"value": "AS",
+		"label": "American Samoa"
 	},
 	{
-		"code": "AD",
-		"name": "Andorra"
+		"value": "AD",
+		"label": "Andorra"
 	},
 	{
-		"code": "AO",
-		"name": "Angola"
+		"value": "AO",
+		"label": "Angola"
 	},
 	{
-		"code": "AI",
-		"name": "Anguilla"
+		"value": "AI",
+		"label": "Anguilla"
 	},
 	{
-		"code": "AQ",
-		"name": "Antarctica"
+		"value": "AQ",
+		"label": "Antarctica"
 	},
 	{
-		"code": "AG",
-		"name": "Antigua and Barbuda"
+		"value": "AG",
+		"label": "Antigua and Barbuda"
 	},
 	{
-		"code": "AR",
-		"name": "Argentina"
+		"value": "AR",
+		"label": "Argentina"
 	},
 	{
-		"code": "AM",
-		"name": "Armenia"
+		"value": "AM",
+		"label": "Armenia"
 	},
 	{
-		"code": "AW",
-		"name": "Aruba"
+		"value": "AW",
+		"label": "Aruba"
 	},
 	{
-		"code": "AU",
-		"name": "Australia"
+		"value": "AU",
+		"label": "Australia"
 	},
 	{
-		"code": "AT",
-		"name": "Austria"
+		"value": "AT",
+		"label": "Austria"
 	},
 	{
-		"code": "AZ",
-		"name": "Azerbaijan"
+		"value": "AZ",
+		"label": "Azerbaijan"
 	},
 	{
-		"code": "BS",
-		"name": "Bahamas"
+		"value": "BS",
+		"label": "Bahamas"
 	},
 	{
-		"code": "BH",
-		"name": "Bahrain"
+		"value": "BH",
+		"label": "Bahrain"
 	},
 	{
-		"code": "BD",
-		"name": "Bangladesh"
+		"value": "BD",
+		"label": "Bangladesh"
 	},
 	{
-		"code": "BB",
-		"name": "Barbados"
+		"value": "BB",
+		"label": "Barbados"
 	},
 	{
-		"code": "BY",
-		"name": "Belarus"
+		"value": "BY",
+		"label": "Belarus"
 	},
 	{
-		"code": "BE",
-		"name": "Belgium"
+		"value": "BE",
+		"label": "Belgium"
 	},
 	{
-		"code": "BZ",
-		"name": "Belize"
+		"value": "BZ",
+		"label": "Belize"
 	},
 	{
-		"code": "BJ",
-		"name": "Benin"
+		"value": "BJ",
+		"label": "Benin"
 	},
 	{
-		"code": "BM",
-		"name": "Bermuda"
+		"value": "BM",
+		"label": "Bermuda"
 	},
 	{
-		"code": "BT",
-		"name": "Bhutan"
+		"value": "BT",
+		"label": "Bhutan"
 	},
 	{
-		"code": "BO",
-		"name": "Bolivia"
+		"value": "BO",
+		"label": "Bolivia"
 	},
 	{
-		"code": "BA",
-		"name": "Bosnia and Herzegovina"
+		"value": "BA",
+		"label": "Bosnia and Herzegovina"
 	},
 	{
-		"code": "BW",
-		"name": "Botswana"
+		"value": "BW",
+		"label": "Botswana"
 	},
 	{
-		"code": "BV",
-		"name": "Bouvet Island"
+		"value": "BV",
+		"label": "Bouvet Island"
 	},
 	{
-		"code": "BR",
-		"name": "Brazil"
+		"value": "BR",
+		"label": "Brazil"
 	},
 	{
-		"code": "VG",
-		"name": "British Virgin Islands"
+		"value": "VG",
+		"label": "British Virgin Islands"
 	},
 	{
-		"code": "IO",
-		"name": "British Indian Ocean Territory"
+		"value": "IO",
+		"label": "British Indian Ocean Territory"
 	},
 	{
-		"code": "BN",
-		"name": "Brunei Darussalam"
+		"value": "BN",
+		"label": "Brunei Darussalam"
 	},
 	{
-		"code": "BG",
-		"name": "Bulgaria"
+		"value": "BG",
+		"label": "Bulgaria"
 	},
 	{
-		"code": "BF",
-		"name": "Burkina Faso"
+		"value": "BF",
+		"label": "Burkina Faso"
 	},
 	{
-		"code": "BI",
-		"name": "Burundi"
+		"value": "BI",
+		"label": "Burundi"
 	},
 	{
-		"code": "KH",
-		"name": "Cambodia"
+		"value": "KH",
+		"label": "Cambodia"
 	},
 	{
-		"code": "CM",
-		"name": "Cameroon"
+		"value": "CM",
+		"label": "Cameroon"
 	},
 	{
-		"code": "CA",
-		"name": "Canada"
+		"value": "CA",
+		"label": "Canada"
 	},
 	{
-		"code": "CV",
-		"name": "Cape Verde"
+		"value": "CV",
+		"label": "Cape Verde"
 	},
 	{
-		"code": "KY",
-		"name": "Cayman Islands"
+		"value": "KY",
+		"label": "Cayman Islands"
 	},
 	{
-		"code": "CF",
-		"name": "Central African Republic"
+		"value": "CF",
+		"label": "Central African Republic"
 	},
 	{
-		"code": "TD",
-		"name": "Chad"
+		"value": "TD",
+		"label": "Chad"
 	},
 	{
-		"code": "CL",
-		"name": "Chile"
+		"value": "CL",
+		"label": "Chile"
 	},
 	{
-		"code": "CN",
-		"name": "China"
+		"value": "CN",
+		"label": "China"
 	},
 	{
-		"code": "HK",
-		"name": "Hong Kong, SAR China"
+		"value": "HK",
+		"label": "Hong Kong, SAR China"
 	},
 	{
-		"code": "MO",
-		"name": "Macao, SAR China"
+		"value": "MO",
+		"label": "Macao, SAR China"
 	},
 	{
-		"code": "CX",
-		"name": "Christmas Island"
+		"value": "CX",
+		"label": "Christmas Island"
 	},
 	{
-		"code": "CC",
-		"name": "Cocos (Keeling) Islands"
+		"value": "CC",
+		"label": "Cocos (Keeling) Islands"
 	},
 	{
-		"code": "CO",
-		"name": "Colombia"
+		"value": "CO",
+		"label": "Colombia"
 	},
 	{
-		"code": "KM",
-		"name": "Comoros"
+		"value": "KM",
+		"label": "Comoros"
 	},
 	{
-		"code": "CG",
-		"name": "Congo (Brazzaville)"
+		"value": "CG",
+		"label": "Congo (Brazzaville)"
 	},
 	{
-		"code": "CD",
-		"name": "Congo, (Kinshasa)"
+		"value": "CD",
+		"label": "Congo, (Kinshasa)"
 	},
 	{
-		"code": "CK",
-		"name": "Cook Islands"
+		"value": "CK",
+		"label": "Cook Islands"
 	},
 	{
-		"code": "CR",
-		"name": "Costa Rica"
+		"value": "CR",
+		"label": "Costa Rica"
 	},
 	{
-		"code": "CI",
-		"name": "Côte d'Ivoire"
+		"value": "CI",
+		"label": "Côte d'Ivoire"
 	},
 	{
-		"code": "HR",
-		"name": "Croatia"
+		"value": "HR",
+		"label": "Croatia"
 	},
 	{
-		"code": "CU",
-		"name": "Cuba"
+		"value": "CU",
+		"label": "Cuba"
 	},
 	{
-		"code": "CY",
-		"name": "Cyprus"
+		"value": "CY",
+		"label": "Cyprus"
 	},
 	{
-		"code": "CZ",
-		"name": "Czech Republic"
+		"value": "CZ",
+		"label": "Czech Republic"
 	},
 	{
-		"code": "DK",
-		"name": "Denmark"
+		"value": "DK",
+		"label": "Denmark"
 	},
 	{
-		"code": "DJ",
-		"name": "Djibouti"
+		"value": "DJ",
+		"label": "Djibouti"
 	},
 	{
-		"code": "DM",
-		"name": "Dominica"
+		"value": "DM",
+		"label": "Dominica"
 	},
 	{
-		"code": "DO",
-		"name": "Dominican Republic"
+		"value": "DO",
+		"label": "Dominican Republic"
 	},
 	{
-		"code": "EC",
-		"name": "Ecuador"
+		"value": "EC",
+		"label": "Ecuador"
 	},
 	{
-		"code": "EG",
-		"name": "Egypt"
+		"value": "EG",
+		"label": "Egypt"
 	},
 	{
-		"code": "SV",
-		"name": "El Salvador"
+		"value": "SV",
+		"label": "El Salvador"
 	},
 	{
-		"code": "GQ",
-		"name": "Equatorial Guinea"
+		"value": "GQ",
+		"label": "Equatorial Guinea"
 	},
 	{
-		"code": "ER",
-		"name": "Eritrea"
+		"value": "ER",
+		"label": "Eritrea"
 	},
 	{
-		"code": "EE",
-		"name": "Estonia"
+		"value": "EE",
+		"label": "Estonia"
 	},
 	{
-		"code": "ET",
-		"name": "Ethiopia"
+		"value": "ET",
+		"label": "Ethiopia"
 	},
 	{
-		"code": "FK",
-		"name": "Falkland Islands (Malvinas)"
+		"value": "FK",
+		"label": "Falkland Islands (Malvinas)"
 	},
 	{
-		"code": "FO",
-		"name": "Faroe Islands"
+		"value": "FO",
+		"label": "Faroe Islands"
 	},
 	{
-		"code": "FJ",
-		"name": "Fiji"
+		"value": "FJ",
+		"label": "Fiji"
 	},
 	{
-		"code": "FI",
-		"name": "Finland"
+		"value": "FI",
+		"label": "Finland"
 	},
 	{
-		"code": "FR",
-		"name": "France"
+		"value": "FR",
+		"label": "France"
 	},
 	{
-		"code": "GF",
-		"name": "French Guiana"
+		"value": "GF",
+		"label": "French Guiana"
 	},
 	{
-		"code": "PF",
-		"name": "French Polynesia"
+		"value": "PF",
+		"label": "French Polynesia"
 	},
 	{
-		"code": "TF",
-		"name": "French Southern Territories"
+		"value": "TF",
+		"label": "French Southern Territories"
 	},
 	{
-		"code": "GA",
-		"name": "Gabon"
+		"value": "GA",
+		"label": "Gabon"
 	},
 	{
-		"code": "GM",
-		"name": "Gambia"
+		"value": "GM",
+		"label": "Gambia"
 	},
 	{
-		"code": "GE",
-		"name": "Georgia"
+		"value": "GE",
+		"label": "Georgia"
 	},
 	{
-		"code": "DE",
-		"name": "Germany"
+		"value": "DE",
+		"label": "Germany"
 	},
 	{
-		"code": "GH",
-		"name": "Ghana"
+		"value": "GH",
+		"label": "Ghana"
 	},
 	{
-		"code": "GI",
-		"name": "Gibraltar"
+		"value": "GI",
+		"label": "Gibraltar"
 	},
 	{
-		"code": "GR",
-		"name": "Greece"
+		"value": "GR",
+		"label": "Greece"
 	},
 	{
-		"code": "GL",
-		"name": "Greenland"
+		"value": "GL",
+		"label": "Greenland"
 	},
 	{
-		"code": "GD",
-		"name": "Grenada"
+		"value": "GD",
+		"label": "Grenada"
 	},
 	{
-		"code": "GP",
-		"name": "Guadeloupe"
+		"value": "GP",
+		"label": "Guadeloupe"
 	},
 	{
-		"code": "GU",
-		"name": "Guam"
+		"value": "GU",
+		"label": "Guam"
 	},
 	{
-		"code": "GT",
-		"name": "Guatemala"
+		"value": "GT",
+		"label": "Guatemala"
 	},
 	{
-		"code": "GG",
-		"name": "Guernsey"
+		"value": "GG",
+		"label": "Guernsey"
 	},
 	{
-		"code": "GN",
-		"name": "Guinea"
+		"value": "GN",
+		"label": "Guinea"
 	},
 	{
-		"code": "GW",
-		"name": "Guinea-Bissau"
+		"value": "GW",
+		"label": "Guinea-Bissau"
 	},
 	{
-		"code": "GY",
-		"name": "Guyana"
+		"value": "GY",
+		"label": "Guyana"
 	},
 	{
-		"code": "HT",
-		"name": "Haiti"
+		"value": "HT",
+		"label": "Haiti"
 	},
 	{
-		"code": "HM",
-		"name": "Heard and Mcdonald Islands"
+		"value": "HM",
+		"label": "Heard and Mcdonald Islands"
 	},
 	{
-		"code": "VA",
-		"name": "Holy See (Vatican City State)"
+		"value": "VA",
+		"label": "Holy See (Vatican City State)"
 	},
 	{
-		"code": "HN",
-		"name": "Honduras"
+		"value": "HN",
+		"label": "Honduras"
 	},
 	{
-		"code": "HU",
-		"name": "Hungary"
+		"value": "HU",
+		"label": "Hungary"
 	},
 	{
-		"code": "IS",
-		"name": "Iceland"
+		"value": "IS",
+		"label": "Iceland"
 	},
 	{
-		"code": "IN",
-		"name": "India"
+		"value": "IN",
+		"label": "India"
 	},
 	{
-		"code": "ID",
-		"name": "Indonesia"
+		"value": "ID",
+		"label": "Indonesia"
 	},
 	{
-		"code": "IR",
-		"name": "Iran, Islamic Republic of"
+		"value": "IR",
+		"label": "Iran, Islamic Republic of"
 	},
 	{
-		"code": "IQ",
-		"name": "Iraq"
+		"value": "IQ",
+		"label": "Iraq"
 	},
 	{
-		"code": "IE",
-		"name": "Ireland"
+		"value": "IE",
+		"label": "Ireland"
 	},
 	{
-		"code": "IM",
-		"name": "Isle of Man"
+		"value": "IM",
+		"label": "Isle of Man"
 	},
 	{
-		"code": "IL",
-		"name": "Israel"
+		"value": "IL",
+		"label": "Israel"
 	},
 	{
-		"code": "IT",
-		"name": "Italy"
+		"value": "IT",
+		"label": "Italy"
 	},
 	{
-		"code": "JM",
-		"name": "Jamaica"
+		"value": "JM",
+		"label": "Jamaica"
 	},
 	{
-		"code": "JP",
-		"name": "Japan"
+		"value": "JP",
+		"label": "Japan"
 	},
 	{
-		"code": "JE",
-		"name": "Jersey"
+		"value": "JE",
+		"label": "Jersey"
 	},
 	{
-		"code": "JO",
-		"name": "Jordan"
+		"value": "JO",
+		"label": "Jordan"
 	},
 	{
-		"code": "KZ",
-		"name": "Kazakhstan"
+		"value": "KZ",
+		"label": "Kazakhstan"
 	},
 	{
-		"code": "KE",
-		"name": "Kenya"
+		"value": "KE",
+		"label": "Kenya"
 	},
 	{
-		"code": "KI",
-		"name": "Kiribati"
+		"value": "KI",
+		"label": "Kiribati"
 	},
 	{
-		"code": "KP",
-		"name": "Korea (North)"
+		"value": "KP",
+		"label": "Korea (North)"
 	},
 	{
-		"code": "KR",
-		"name": "Korea (South)"
+		"value": "KR",
+		"label": "Korea (South)"
 	},
 	{
-		"code": "KW",
-		"name": "Kuwait"
+		"value": "KW",
+		"label": "Kuwait"
 	},
 	{
-		"code": "KG",
-		"name": "Kyrgyzstan"
+		"value": "KG",
+		"label": "Kyrgyzstan"
 	},
 	{
-		"code": "LA",
-		"name": "Lao PDR"
+		"value": "LA",
+		"label": "Lao PDR"
 	},
 	{
-		"code": "LV",
-		"name": "Latvia"
+		"value": "LV",
+		"label": "Latvia"
 	},
 	{
-		"code": "LB",
-		"name": "Lebanon"
+		"value": "LB",
+		"label": "Lebanon"
 	},
 	{
-		"code": "LS",
-		"name": "Lesotho"
+		"value": "LS",
+		"label": "Lesotho"
 	},
 	{
-		"code": "LR",
-		"name": "Liberia"
+		"value": "LR",
+		"label": "Liberia"
 	},
 	{
-		"code": "LY",
-		"name": "Libya"
+		"value": "LY",
+		"label": "Libya"
 	},
 	{
-		"code": "LI",
-		"name": "Liechtenstein"
+		"value": "LI",
+		"label": "Liechtenstein"
 	},
 	{
-		"code": "LT",
-		"name": "Lithuania"
+		"value": "LT",
+		"label": "Lithuania"
 	},
 	{
-		"code": "LU",
-		"name": "Luxembourg"
+		"value": "LU",
+		"label": "Luxembourg"
 	},
 	{
-		"code": "MK",
-		"name": "Macedonia, Republic of"
+		"value": "MK",
+		"label": "Macedonia, Republic of"
 	},
 	{
-		"code": "MG",
-		"name": "Madagascar"
+		"value": "MG",
+		"label": "Madagascar"
 	},
 	{
-		"code": "MW",
-		"name": "Malawi"
+		"value": "MW",
+		"label": "Malawi"
 	},
 	{
-		"code": "MY",
-		"name": "Malaysia"
+		"value": "MY",
+		"label": "Malaysia"
 	},
 	{
-		"code": "MV",
-		"name": "Maldives"
+		"value": "MV",
+		"label": "Maldives"
 	},
 	{
-		"code": "ML",
-		"name": "Mali"
+		"value": "ML",
+		"label": "Mali"
 	},
 	{
-		"code": "MT",
-		"name": "Malta"
+		"value": "MT",
+		"label": "Malta"
 	},
 	{
-		"code": "MH",
-		"name": "Marshall Islands"
+		"value": "MH",
+		"label": "Marshall Islands"
 	},
 	{
-		"code": "MQ",
-		"name": "Martinique"
+		"value": "MQ",
+		"label": "Martinique"
 	},
 	{
-		"code": "MR",
-		"name": "Mauritania"
+		"value": "MR",
+		"label": "Mauritania"
 	},
 	{
-		"code": "MU",
-		"name": "Mauritius"
+		"value": "MU",
+		"label": "Mauritius"
 	},
 	{
-		"code": "YT",
-		"name": "Mayotte"
+		"value": "YT",
+		"label": "Mayotte"
 	},
 	{
-		"code": "MX",
-		"name": "Mexico"
+		"value": "MX",
+		"label": "Mexico"
 	},
 	{
-		"code": "FM",
-		"name": "Micronesia, Federated States of"
+		"value": "FM",
+		"label": "Micronesia, Federated States of"
 	},
 	{
-		"code": "MD",
-		"name": "Moldova"
+		"value": "MD",
+		"label": "Moldova"
 	},
 	{
-		"code": "MC",
-		"name": "Monaco"
+		"value": "MC",
+		"label": "Monaco"
 	},
 	{
-		"code": "MN",
-		"name": "Mongolia"
+		"value": "MN",
+		"label": "Mongolia"
 	},
 	{
-		"code": "ME",
-		"name": "Montenegro"
+		"value": "ME",
+		"label": "Montenegro"
 	},
 	{
-		"code": "MS",
-		"name": "Montserrat"
+		"value": "MS",
+		"label": "Montserrat"
 	},
 	{
-		"code": "MA",
-		"name": "Morocco"
+		"value": "MA",
+		"label": "Morocco"
 	},
 	{
-		"code": "MZ",
-		"name": "Mozambique"
+		"value": "MZ",
+		"label": "Mozambique"
 	},
 	{
-		"code": "MM",
-		"name": "Myanmar"
+		"value": "MM",
+		"label": "Myanmar"
 	},
 	{
-		"code": "NA",
-		"name": "Namibia"
+		"value": "NA",
+		"label": "Namibia"
 	},
 	{
-		"code": "NR",
-		"name": "Nauru"
+		"value": "NR",
+		"label": "Nauru"
 	},
 	{
-		"code": "NP",
-		"name": "Nepal"
+		"value": "NP",
+		"label": "Nepal"
 	},
 	{
-		"code": "NL",
-		"name": "Netherlands"
+		"value": "NL",
+		"label": "Netherlands"
 	},
 	{
-		"code": "AN",
-		"name": "Netherlands Antilles"
+		"value": "AN",
+		"label": "Netherlands Antilles"
 	},
 	{
-		"code": "NC",
-		"name": "New Caledonia"
+		"value": "NC",
+		"label": "New Caledonia"
 	},
 	{
-		"code": "NZ",
-		"name": "New Zealand"
+		"value": "NZ",
+		"label": "New Zealand"
 	},
 	{
-		"code": "NI",
-		"name": "Nicaragua"
+		"value": "NI",
+		"label": "Nicaragua"
 	},
 	{
-		"code": "NE",
-		"name": "Niger"
+		"value": "NE",
+		"label": "Niger"
 	},
 	{
-		"code": "NG",
-		"name": "Nigeria"
+		"value": "NG",
+		"label": "Nigeria"
 	},
 	{
-		"code": "NU",
-		"name": "Niue"
+		"value": "NU",
+		"label": "Niue"
 	},
 	{
-		"code": "NF",
-		"name": "Norfolk Island"
+		"value": "NF",
+		"label": "Norfolk Island"
 	},
 	{
-		"code": "MP",
-		"name": "Northern Mariana Islands"
+		"value": "MP",
+		"label": "Northern Mariana Islands"
 	},
 	{
-		"code": "NO",
-		"name": "Norway"
+		"value": "NO",
+		"label": "Norway"
 	},
 	{
-		"code": "OM",
-		"name": "Oman"
+		"value": "OM",
+		"label": "Oman"
 	},
 	{
-		"code": "PK",
-		"name": "Pakistan"
+		"value": "PK",
+		"label": "Pakistan"
 	},
 	{
-		"code": "PW",
-		"name": "Palau"
+		"value": "PW",
+		"label": "Palau"
 	},
 	{
-		"code": "PS",
-		"name": "Palestinian Territory"
+		"value": "PS",
+		"label": "Palestinian Territory"
 	},
 	{
-		"code": "PA",
-		"name": "Panama"
+		"value": "PA",
+		"label": "Panama"
 	},
 	{
-		"code": "PG",
-		"name": "Papua New Guinea"
+		"value": "PG",
+		"label": "Papua New Guinea"
 	},
 	{
-		"code": "PY",
-		"name": "Paraguay"
+		"value": "PY",
+		"label": "Paraguay"
 	},
 	{
-		"code": "PE",
-		"name": "Peru"
+		"value": "PE",
+		"label": "Peru"
 	},
 	{
-		"code": "PH",
-		"name": "Philippines"
+		"value": "PH",
+		"label": "Philippines"
 	},
 	{
-		"code": "PN",
-		"name": "Pitcairn"
+		"value": "PN",
+		"label": "Pitcairn"
 	},
 	{
-		"code": "PL",
-		"name": "Poland"
+		"value": "PL",
+		"label": "Poland"
 	},
 	{
-		"code": "PT",
-		"name": "Portugal"
+		"value": "PT",
+		"label": "Portugal"
 	},
 	{
-		"code": "PR",
-		"name": "Puerto Rico"
+		"value": "PR",
+		"label": "Puerto Rico"
 	},
 	{
-		"code": "QA",
-		"name": "Qatar"
+		"value": "QA",
+		"label": "Qatar"
 	},
 	{
-		"code": "RE",
-		"name": "Réunion"
+		"value": "RE",
+		"label": "Réunion"
 	},
 	{
-		"code": "RO",
-		"name": "Romania"
+		"value": "RO",
+		"label": "Romania"
 	},
 	{
-		"code": "RU",
-		"name": "Russian Federation"
+		"value": "RU",
+		"label": "Russian Federation"
 	},
 	{
-		"code": "RW",
-		"name": "Rwanda"
+		"value": "RW",
+		"label": "Rwanda"
 	},
 	{
-		"code": "BL",
-		"name": "Saint-Barthélemy"
+		"value": "BL",
+		"label": "Saint-Barthélemy"
 	},
 	{
-		"code": "SH",
-		"name": "Saint Helena"
+		"value": "SH",
+		"label": "Saint Helena"
 	},
 	{
-		"code": "KN",
-		"name": "Saint Kitts and Nevis"
+		"value": "KN",
+		"label": "Saint Kitts and Nevis"
 	},
 	{
-		"code": "LC",
-		"name": "Saint Lucia"
+		"value": "LC",
+		"label": "Saint Lucia"
 	},
 	{
-		"code": "MF",
-		"name": "Saint-Martin (French part)"
+		"value": "MF",
+		"label": "Saint-Martin (French part)"
 	},
 	{
-		"code": "PM",
-		"name": "Saint Pierre and Miquelon"
+		"value": "PM",
+		"label": "Saint Pierre and Miquelon"
 	},
 	{
-		"code": "VC",
-		"name": "Saint Vincent and Grenadines"
+		"value": "VC",
+		"label": "Saint Vincent and Grenadines"
 	},
 	{
-		"code": "WS",
-		"name": "Samoa"
+		"value": "WS",
+		"label": "Samoa"
 	},
 	{
-		"code": "SM",
-		"name": "San Marino"
+		"value": "SM",
+		"label": "San Marino"
 	},
 	{
-		"code": "ST",
-		"name": "Sao Tome and Principe"
+		"value": "ST",
+		"label": "Sao Tome and Principe"
 	},
 	{
-		"code": "SA",
-		"name": "Saudi Arabia"
+		"value": "SA",
+		"label": "Saudi Arabia"
 	},
 	{
-		"code": "SN",
-		"name": "Senegal"
+		"value": "SN",
+		"label": "Senegal"
 	},
 	{
-		"code": "RS",
-		"name": "Serbia"
+		"value": "RS",
+		"label": "Serbia"
 	},
 	{
-		"code": "SC",
-		"name": "Seychelles"
+		"value": "SC",
+		"label": "Seychelles"
 	},
 	{
-		"code": "SL",
-		"name": "Sierra Leone"
+		"value": "SL",
+		"label": "Sierra Leone"
 	},
 	{
-		"code": "SG",
-		"name": "Singapore"
+		"value": "SG",
+		"label": "Singapore"
 	},
 	{
-		"code": "SK",
-		"name": "Slovakia"
+		"value": "SK",
+		"label": "Slovakia"
 	},
 	{
-		"code": "SI",
-		"name": "Slovenia"
+		"value": "SI",
+		"label": "Slovenia"
 	},
 	{
-		"code": "SB",
-		"name": "Solomon Islands"
+		"value": "SB",
+		"label": "Solomon Islands"
 	},
 	{
-		"code": "SO",
-		"name": "Somalia"
+		"value": "SO",
+		"label": "Somalia"
 	},
 	{
-		"code": "ZA",
-		"name": "South Africa"
+		"value": "ZA",
+		"label": "South Africa"
 	},
 	{
-		"code": "GS",
-		"name": "South Georgia and the South Sandwich Islands"
+		"value": "GS",
+		"label": "South Georgia and the South Sandwich Islands"
 	},
 	{
-		"code": "SS",
-		"name": "South Sudan"
+		"value": "SS",
+		"label": "South Sudan"
 	},
 	{
-		"code": "ES",
-		"name": "Spain"
+		"value": "ES",
+		"label": "Spain"
 	},
 	{
-		"code": "LK",
-		"name": "Sri Lanka"
+		"value": "LK",
+		"label": "Sri Lanka"
 	},
 	{
-		"code": "SD",
-		"name": "Sudan"
+		"value": "SD",
+		"label": "Sudan"
 	},
 	{
-		"code": "SR",
-		"name": "Suriname"
+		"value": "SR",
+		"label": "Surilabel"
 	},
 	{
-		"code": "SJ",
-		"name": "Svalbard and Jan Mayen Islands"
+		"value": "SJ",
+		"label": "Svalbard and Jan Mayen Islands"
 	},
 	{
-		"code": "SZ",
-		"name": "Swaziland"
+		"value": "SZ",
+		"label": "Swaziland"
 	},
 	{
-		"code": "SE",
-		"name": "Sweden"
+		"value": "SE",
+		"label": "Sweden"
 	},
 	{
-		"code": "CH",
-		"name": "Switzerland"
+		"value": "CH",
+		"label": "Switzerland"
 	},
 	{
-		"code": "SY",
-		"name": "Syrian Arab Republic (Syria)"
+		"value": "SY",
+		"label": "Syrian Arab Republic (Syria)"
 	},
 	{
-		"code": "TW",
-		"name": "Taiwan, Republic of China"
+		"value": "TW",
+		"label": "Taiwan, Republic of China"
 	},
 	{
-		"code": "TJ",
-		"name": "Tajikistan"
+		"value": "TJ",
+		"label": "Tajikistan"
 	},
 	{
-		"code": "TZ",
-		"name": "Tanzania, United Republic of"
+		"value": "TZ",
+		"label": "Tanzania, United Republic of"
 	},
 	{
-		"code": "TH",
-		"name": "Thailand"
+		"value": "TH",
+		"label": "Thailand"
 	},
 	{
-		"code": "TL",
-		"name": "Timor-Leste"
+		"value": "TL",
+		"label": "Timor-Leste"
 	},
 	{
-		"code": "TG",
-		"name": "Togo"
+		"value": "TG",
+		"label": "Togo"
 	},
 	{
-		"code": "TK",
-		"name": "Tokelau"
+		"value": "TK",
+		"label": "Tokelau"
 	},
 	{
-		"code": "TO",
-		"name": "Tonga"
+		"value": "TO",
+		"label": "Tonga"
 	},
 	{
-		"code": "TT",
-		"name": "Trinidad and Tobago"
+		"value": "TT",
+		"label": "Trinidad and Tobago"
 	},
 	{
-		"code": "TN",
-		"name": "Tunisia"
+		"value": "TN",
+		"label": "Tunisia"
 	},
 	{
-		"code": "TR",
-		"name": "Turkey"
+		"value": "TR",
+		"label": "Turkey"
 	},
 	{
-		"code": "TM",
-		"name": "Turkmenistan"
+		"value": "TM",
+		"label": "Turkmenistan"
 	},
 	{
-		"code": "TC",
-		"name": "Turks and Caicos Islands"
+		"value": "TC",
+		"label": "Turks and Caicos Islands"
 	},
 	{
-		"code": "TV",
-		"name": "Tuvalu"
+		"value": "TV",
+		"label": "Tuvalu"
 	},
 	{
-		"code": "UG",
-		"name": "Uganda"
+		"value": "UG",
+		"label": "Uganda"
 	},
 	{
-		"code": "UA",
-		"name": "Ukraine"
+		"value": "UA",
+		"label": "Ukraine"
 	},
 	{
-		"code": "AE",
-		"name": "United Arab Emirates"
+		"value": "AE",
+		"label": "United Arab Emirates"
 	},
 	{
-		"code": "GB",
-		"name": "United Kingdom"
+		"value": "GB",
+		"label": "United Kingdom"
 	},
 	{
-		"code": "US",
-		"name": "United States of America"
+		"value": "US",
+		"label": "United States of America"
 	},
 	{
-		"code": "UM",
-		"name": "US Minor Outlying Islands"
+		"value": "UM",
+		"label": "US Minor Outlying Islands"
 	},
 	{
-		"code": "UY",
-		"name": "Uruguay"
+		"value": "UY",
+		"label": "Uruguay"
 	},
 	{
-		"code": "UZ",
-		"name": "Uzbekistan"
+		"value": "UZ",
+		"label": "Uzbekistan"
 	},
 	{
-		"code": "VU",
-		"name": "Vanuatu"
+		"value": "VU",
+		"label": "Vanuatu"
 	},
 	{
-		"code": "VE",
-		"name": "Venezuela (Bolivarian Republic)"
+		"value": "VE",
+		"label": "Venezuela (Bolivarian Republic)"
 	},
 	{
-		"code": "VN",
-		"name": "Viet Nam"
+		"value": "VN",
+		"label": "Viet Nam"
 	},
 	{
-		"code": "VI",
-		"name": "Virgin Islands, US"
+		"value": "VI",
+		"label": "Virgin Islands, US"
 	},
 	{
-		"code": "WF",
-		"name": "Wallis and Futuna Islands"
+		"value": "WF",
+		"label": "Wallis and Futuna Islands"
 	},
 	{
-		"code": "EH",
-		"name": "Western Sahara"
+		"value": "EH",
+		"label": "Western Sahara"
 	},
 	{
-		"code": "YE",
-		"name": "Yemen"
+		"value": "YE",
+		"label": "Yemen"
 	},
 	{
-		"code": "ZM",
-		"name": "Zambia"
+		"value": "ZM",
+		"label": "Zambia"
 	},
 	{
-		"code": "ZW",
-		"name": "Zimbabwe"
+		"value": "ZW",
+		"label": "Zimbabwe"
 	}
 ]

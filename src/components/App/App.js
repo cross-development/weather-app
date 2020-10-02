@@ -1,13 +1,14 @@
 //Core
 import React, { useState, useEffect } from 'react';
 //Components
+import Layout from '../Layout';
 import Loader from '../Loader';
 import SearchForm from '../SearchForm';
 import Notification from '../Notification';
 import WeatherDetails from '../WeatherDetails';
 import WeatherForecasts from '../WeatherForecasts';
 //Services
-import weatherAPI from 'services';
+import { getCurrentWeather, setSearchParams } from 'services';
 
 const App = () => {
 	const [error, setError] = useState(null);
@@ -18,20 +19,11 @@ const App = () => {
 	useEffect(() => {
 		if (!searchQuery) return;
 
-		setLoading(true);
-
-		weatherAPI
-			.fetchCurrentWeatherByQuery()
-			.then(({ status, data, statusText }) =>
-				status === 200 ? setWeather(...data.data) : setError(statusText),
-			)
-			.catch(error => setError(error))
-			.finally(() => setLoading(false));
+		getCurrentWeather(setWeather, setError, setLoading);
 	}, [searchQuery]);
 
 	const handleFormSubmit = (query, countryCode) => {
-		weatherAPI.searchQuery = query;
-		weatherAPI.code = countryCode;
+		setSearchParams(query, countryCode);
 
 		setSearchQuery(query);
 		setWeather(null);
@@ -42,13 +34,15 @@ const App = () => {
 		<>
 			<SearchForm onSubmit={handleFormSubmit} />
 
-			{loading && <Loader isLoading={loading} />}
+			<Layout>
+				{loading && <Loader isLoading={loading} />}
 
-			{error && <Notification message={error.message || error} />}
+				{error && <Notification message={error.message || error} />}
 
-			{!loading && weather && <WeatherDetails weatherData={weather} />}
+				{!loading && weather && <WeatherDetails weatherData={weather} />}
 
-			{!loading && weather && <WeatherForecasts />}
+				{!loading && weather && <WeatherForecasts />}
+			</Layout>
 		</>
 	);
 };

@@ -1,10 +1,19 @@
 //Core
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Select from 'react-styled-select';
 //Data
 import countriesCode from 'data/countriesCode.json';
 //Styles
-import { StyledForm, StyledDiv, StyledButton, StyledSpan, StyledInput } from './SearchForm.styles';
+import {
+	StyledForm,
+	StyledDiv,
+	StyledButton,
+	StyledSpan,
+	StyledInput,
+	StyledSelectWrapper,
+} from './SearchForm.styles';
+import './Select.css';
 
 const SearchForm = ({ onSubmit }) => {
 	const [value, setValue] = useState('');
@@ -12,7 +21,8 @@ const SearchForm = ({ onSubmit }) => {
 
 	const handleChangeText = ({ target: { value } }) => setValue(value);
 
-	const handleChangeSelect = ({ target: { value } }) => setCountryCode(value);
+	// const handleChangeSelect = ({ target: { value } }) => setCountryCode(value);
+	const handleChangeSelect = value => console.log(value);
 
 	const handleSubmit = e => {
 		e.preventDefault();
@@ -25,22 +35,23 @@ const SearchForm = ({ onSubmit }) => {
 	};
 
 	return (
-		<StyledForm onSubmit={handleSubmit}>
-			<StyledDiv>
-				<StyledButton type="submit">
-					<StyledSpan>Search</StyledSpan>
-				</StyledButton>
+		<>
+			<StyledForm onSubmit={handleSubmit}>
+				<StyledDiv>
+					<StyledButton type="submit">
+						<StyledSpan>Search</StyledSpan>
+					</StyledButton>
 
-				<StyledInput
-					required
-					type="text"
-					value={value}
-					autoComplete="off"
-					placeholder="Search location, zip..."
-					onChange={handleChangeText}
-				/>
+					<StyledInput
+						required
+						type="text"
+						value={value}
+						autoComplete="off"
+						placeholder="Search location, zip..."
+						onChange={value => handleChangeText(value)}
+					/>
 
-				<select value={countryCode} onChange={handleChangeSelect}>
+					{/* <select value={countryCode} onChange={handleChangeSelect}>
 					<option value="" disabled>
 						None
 					</option>
@@ -49,9 +60,14 @@ const SearchForm = ({ onSubmit }) => {
 							{name}
 						</option>
 					))}
-				</select>
-			</StyledDiv>
-		</StyledForm>
+				</select> */}
+				</StyledDiv>
+			</StyledForm>
+
+			<StyledSelectWrapper>
+				<Select options={countriesCode} onChange={handleChangeSelect} className="dark-theme" />
+			</StyledSelectWrapper>
+		</>
 	);
 };
 
