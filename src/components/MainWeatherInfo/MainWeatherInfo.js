@@ -12,7 +12,7 @@ import {
 } from './MainWeatherInfo.styles';
 
 const MainWeatherInfo = ({ cityName, countryCode, weatherIcon, feelsTemp, temperature }) => {
-	const { name: country } = countriesCode.find(({ code }) => code === countryCode);
+	const { label: country } = countriesCode.find(({ code }) => code === countryCode);
 
 	return (
 		<StyledDiv>

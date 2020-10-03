@@ -1,19 +1,12 @@
 //Core
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Select from 'react-styled-select';
+import Select from 'react-select';
 //Data
 import countriesCode from 'data/countriesCode.json';
 //Styles
-import {
-	StyledForm,
-	StyledDiv,
-	StyledButton,
-	StyledSpan,
-	StyledInput,
-	StyledSelectWrapper,
-} from './SearchForm.styles';
-import './Select.css';
+import { StyledForm, StyledDiv, StyledButton, StyledSpan, StyledInput } from './SearchForm.styles';
+import { customStyles } from './SearchForm.styles';
 
 const SearchForm = ({ onSubmit }) => {
 	const [value, setValue] = useState('');
@@ -21,8 +14,7 @@ const SearchForm = ({ onSubmit }) => {
 
 	const handleChangeText = ({ target: { value } }) => setValue(value);
 
-	// const handleChangeSelect = ({ target: { value } }) => setCountryCode(value);
-	const handleChangeSelect = value => console.log(value);
+	const handleChangeSelect = ({ code }) => setCountryCode(code);
 
 	const handleSubmit = e => {
 		e.preventDefault();
@@ -51,22 +43,14 @@ const SearchForm = ({ onSubmit }) => {
 						onChange={value => handleChangeText(value)}
 					/>
 
-					{/* <select value={countryCode} onChange={handleChangeSelect}>
-					<option value="" disabled>
-						None
-					</option>
-					{countriesCode.map(({ code, name }) => (
-						<option key={code} value={code}>
-							{name}
-						</option>
-					))}
-				</select> */}
+					<Select
+						styles={customStyles}
+						options={countriesCode}
+						onChange={handleChangeSelect}
+						defaultValue={countriesCode[0].label}
+					/>
 				</StyledDiv>
 			</StyledForm>
-
-			<StyledSelectWrapper>
-				<Select options={countriesCode} onChange={handleChangeSelect} className="dark-theme" />
-			</StyledSelectWrapper>
 		</>
 	);
 };

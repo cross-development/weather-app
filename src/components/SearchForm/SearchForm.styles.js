@@ -4,9 +4,7 @@ export const StyledForm = styled.form`
 	display: flex;
 	align-items: center;
 	width: 100%;
-	max-width: 600px;
-	border-radius: 3px;
-	overflow: hidden;
+	max-width: 40%;
 	padding: 0 50px;
 	margin: 0 auto 3rem;
 `;
@@ -15,8 +13,6 @@ export const StyledDiv = styled.div`
 	display: flex;
 	align-items: center;
 	width: 100%;
-	border-radius: 50px;
-	overflow: hidden;
 `;
 
 export const StyledButton = styled.button`
@@ -25,10 +21,12 @@ export const StyledButton = styled.button`
 	height: 38px;
 	border: 0;
 	background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
-	background-size: 40%;
+	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
 	opacity: 0.6;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
 	transition: opacity 250ms linear;
 	cursor: pointer;
 	outline: none;
@@ -54,7 +52,7 @@ export const StyledSpan = styled.span`
 export const StyledInput = styled.input`
 	display: inline-block;
 	width: 100%;
-	height: 38px;
+	height: 36px;
 	font: inherit;
 	font-size: 20px;
 	line-height: 24px;
@@ -112,6 +110,52 @@ export const StyledInput = styled.input`
 	}
 `;
 
-export const StyledSelectWrapper = styled.div`
-	width: 50%;
-`;
+export const customStyles = {
+	container: (provided, state) => ({
+		...provided,
+		width: 300,
+		border: 'none',
+	}),
+
+	control: (provided, state) => ({
+		...provided,
+		background: 'rgba(0,0,0,0.2)',
+		borderColor: 'none',
+		border: 'none',
+		boxShadow: 'none',
+		borderRadius: 'none',
+		borderTopRightRadius: 50,
+		borderBottomRightRadius: 50,
+	}),
+
+	placeholder: (provided, state) => ({
+		...provided,
+		color: '#D3DAD1',
+	}),
+
+	menu: (provided, state) => ({
+		...provided,
+		background: 'rgba(0,0,0,0.2)',
+		color: '#FFF',
+	}),
+
+	option: (provided, state) => ({
+		...provided,
+		backgroundColor: 'rgba(0,0,0,0.2)',
+
+		':active': {
+			backgroundColor: 'rgba(0,0,0,0.4)',
+			color: '#fff',
+		},
+
+		':hover': {
+			backgroundColor: 'rgba(0,0,0,0.5)',
+			color: '#fff',
+		},
+	}),
+
+	singleValue: (provided, state) => ({
+		...provided,
+		color: '#fff',
+	}),
+};
