@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledForm = styled.form`
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	width: 100%;
 	max-width: 40%;
 	padding: 0 50px;
@@ -50,9 +50,9 @@ export const StyledSpan = styled.span`
 `;
 
 export const StyledInput = styled.input`
-	display: inline-block;
+	display: block;
 	width: 100%;
-	height: 36px;
+	height: 100%;
 	font: inherit;
 	font-size: 20px;
 	line-height: 24px;
