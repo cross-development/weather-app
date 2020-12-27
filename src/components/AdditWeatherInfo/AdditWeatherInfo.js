@@ -1,6 +1,7 @@
 //Core
 import React from 'react';
 import PropTypes from 'prop-types';
+//Material-ui
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';

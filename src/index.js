@@ -4,6 +4,12 @@ import ReactDOM from 'react-dom';
 //Components
 import App from 'components/App';
 //Styles
-import './index.css';
+import GlobalStyles from './index.styles';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+	<>
+		<App />
+		<GlobalStyles />
+	</>,
+	document.getElementById('root'),
+);

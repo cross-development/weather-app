@@ -19,7 +19,6 @@ export const getCurrentWeather = (setWeather, setError, setLoading) => {
 };
 
 export const getForecastWeather = (setForecast, setError) => {
-	console.log('object');
 	weatherAPI
 		.fetchForecastWeather()
 		.then(({ status, data, statusText }) =>

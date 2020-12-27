@@ -17,7 +17,7 @@ const WeatherForecasts = () => {
 
 	return (
 		<StyledSection>
-			<WeatherCategory onGetForecast={getWeather} />
+			<WeatherCategory onGetForecast={getWeather} isLoaded={Boolean(forecast)} />
 
 			{error && <Notification message={error.message || error} />}
 

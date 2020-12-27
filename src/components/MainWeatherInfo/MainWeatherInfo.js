@@ -3,13 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import countriesCode from 'data/countriesCode.json';
 //Styles
-import {
-	StyledDiv,
-	StyledImg,
-	StyledTitleP,
-	StyledTempP,
-	StyledSubtitleP,
-} from './MainWeatherInfo.styles';
+import { StyledTempP, StyledSubtitleP } from './MainWeatherInfo.styles';
+import { StyledDiv, StyledImg, StyledTitleP } from './MainWeatherInfo.styles';
 
 const MainWeatherInfo = ({ cityName, countryCode, weatherIcon, feelsTemp, temperature }) => {
 	const { label: country } = countriesCode.find(({ code }) => code === countryCode);
